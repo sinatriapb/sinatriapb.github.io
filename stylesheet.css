@@ -1,0 +1,220 @@
+/* header */
+#header {
+  width: 100%;
+  background-color: rgb(23, 50, 73);
+}
+/* akhir header */
+
+/* nav */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "segoe ui";
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+  font-family: "Grand Hotel";
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+/* responsif navbar */
+
+@media (max-width: 600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(60vh - 50px);
+    overflow-y: auto;
+  }
+}
+/* akhir responsif */
+/* nav */
+.carousel-caption h5 {
+  font-family: "Grand Hotel", cursive;
+  font-size: 82px;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/2a.jpg");
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  color: white;
+
+  font-size: 15px;
+}
+.hero-text h1 {
+  font-size: 70px;
+  font-family: "Grand Hotel", cursive;
+}
+.container-1 {
+  width: 80%;
+  top: 0;
+}
+.container-2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #4d4d4d;
+  margin-top: -2px;
+  display: inline-block;
+}
+
+.container-picture img {
+  width: 120px;
+  border-radius: 50%;
+  border: rgb(107, 106, 106) solid 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer {
+  background-color: #000;
+  background-position: center;
+}
+.footer-text {
+  color: rgb(117, 114, 114);
+  font-weight: lighter;
+}
+
+/* card */
+
+.container-card {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: white;
+  width: 270px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 15px;
+}
+.card-image {
+  height: 150px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+.img1 {
+  background-image: url("image/2a.jpg");
+}
+.img2 {
+  background-image: url("image/1b.jpg");
+}
+.img3 {
+  background-image: url("image/3a.jpg");
+}
+.img4 {
+  background-image: url("image/3a.jpg");
+}
+.img4 {
+  background-image: url("image/3a.jpg");
+}
+.card a {
+  background-color: blue;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.card:hover {
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: all 1s ease;
+}
