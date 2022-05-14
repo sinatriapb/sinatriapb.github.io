@@ -1,53 +1,115 @@
-/* reset */
-
-/* akhir reset */
-
-/* nav */
-.brand {
-  float: left;
-  color: white;
-  font-weight: bold;
-}
-li {
-  float: right;
-  list-style: none;
-}
-.nav {
-  border: 1px solid;
+html,
+body {
   width: 100%;
-  height: 50px;
-  background-color: grey;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-a {
-  text-decoration: none;
-  padding: 5px;
-  color: white;
+
+* {
+  font-family: "Montserrat", sans-serif;
 }
-li :hover {
-  color: blue;
+
+/* banner */
+.navbar a {
+  color: #fff;
 }
-/* akhir nav */
-/* section 1 */
-.container {
-  border: 1px solid black;
+.banner {
+  background: url("image/lubo-minar-jUiNBSfWZPw-unsplash.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.profile {
   display: flex;
+  justify-content: center;
 }
-.sidenav {
-  border: 1px solid blue;
-  width: 20%;
-  height: 50vh;
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 50px black;
 }
-.main {
-  border: 1px solid red;
-  width: 80%;
-  height: 100vh;
+/* about */
+
+.about {
+  background-color: black;
+  height: auto;
 }
-.title {
-  border: 1px solid red;
+.lingkaran {
+  display: inline-block;
+  border-radius: 50%;
+  width: 90px;
+  margin: auto;
+  height: 90px;
 }
-.content {
-  border: 1px solid red;
+.lingkaran i {
+  position: relative;
+  top: 22px;
 }
-.footer_text {
-  border: 1px solid greenyellow;
+.social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: black;
+  border-radius: 50%;
+  background-color: white;
+  line-height: 53px;
+}
+.section2 {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  padding-bottom: 50px;
+}
+
+footer {
+  background: url("image/lubo-minar-jUiNBSfWZPw-unsplash.jpg") no-repeat center center;
+  background-size: cover;
+}
+.copyright {
+  border-radius: 15px;
+}
+.interest {
+  border-radius: 20px;
+  padding-bottom: 100px;
+}
+.quotes {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.lang {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: white;
+  border-radius: 50%;
+  background-color: blue;
+  line-height: 34px;
+  font-size: large;
+}
+/* mobile */
+@media (max-width: 599px) {
+  .edu {
+    text-align: center;
+  }
+  .section2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/* tablet */
+@media (max-width: 1024px) and (min-width: 600px) {
+  .edu {
+    text-align: left;
+  }
+}
+/* desktop */
+@media (min-width: 1024px) {
+  .edu {
+    text-align: left;
+  }
 }

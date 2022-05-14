@@ -5,43 +5,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheet.css" />
-    <title>Document</title>
+    <title>Personal blog - Sinatria</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/man.png" />
+    <!-- bootstap -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
   </head>
-  <body>
+  <body class="bg-dark">
     <!-- navbar -->
-    <div class="nav">
-      <ul>
-        <div class="brand">
-          <li class="brand">Navbar</li>
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top text-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">My bio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-right" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+            <a class="nav-link" href="#">Education</a>
+            <a class="nav-link" href="#">Interest</a>
+          </div>
         </div>
-        <li><a href="">About</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Section</a></li>
-      </ul>
+      </div>
+    </nav>
+    <!-- banner -->
+    <div class="container-fluid banner">
+      <div class="container text-center">
+        <h3 class="display-1 text-light">halo!</h3>
+        <h4 class="display-6 text-light">Saya Sinatria Pindho Barokah, selamat datang di website bio saya</h4>
+        <a href="#about">
+          <button type="button" class="btn btn-warning btn-lg">Tentang Saya</button>
+        </a>
+      </div>
     </div>
-    <!-- aknir navbar -->
-
-    <section>
-      <div class="container">
-        <div class="sidenav">
-          <p>this is sidenav</p>
-          <ul>
-            <li><a href="">link 1</a></li>
-            <li><a href="">link 2</a></li>
-            <li><a href="">link 3</a></li>
-            <li><a href="">link 4</a></li>
-          </ul>
+    <!-- about -->
+    <section class="section1">
+      <div class="container-fluid about pt-5 pb-5">
+        <h3 class="dispay-3 text-center text-light mb-4" id="About">About Me</h3>
+        <div class="profile pb-4">
+          <img src="image/profile.jpg" alt="" />
         </div>
-        <div class="main">
-          <div class="title"><h3>This is title</h3></div>
-          <div class="content"><p>this is content</p></div>
+        <div class="container text-center text-light">
+          <p>
+            <a href="" class="social"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href="" class="social"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href="" class="social"><i class="fa-brands fa-github fa-2x"></i></a>
+          </p>
+
+          
+          <p>Saya dilahirkan oleh kedua orang tua yang berdarah jawa di Banyumas Jawa Tengah pada tahun 2000. Saya di besarkan di Solok Selatan, Sumatera Barat </p>
+          <h5 class="mt-4 mb-4 text-warning">Edukasi</h5>
+          <dl class="row edu">
+            <dt class="col-sm-3"></i> Sekolah Dasar</dt>
+            <dd class="col-sm-9">
+              <p>Tahun 2007-2012,</p>
+              <p><a style="text-decoration: none" href="https://id.wikipedia.org/wiki/Kabupaten_Solok_Selatan">SDN 18 Dusun Tangah, Solok Selatan.</a></p>
+            </dd>
+
+            <dt class="col-sm-3">Sekolah Menengah Pertama</dt>
+            <dd class="col-sm-9">
+              <p>Tahun 2013-2016.</p>
+              <p><a style="text-decoration: none" href="https://id.wikipedia.org/wiki/Kabupaten_Solok_Selatan">Mts Baitul Ihza Sitapus, Solok Selatan.</a></p>
+            </dd>
+
+            <dt class="col-sm-3">Sekolah Menengah Akhir</dt>
+            <dd class="col-sm-9">
+              <p>Tahun 2016-2018.</p>
+              <p> <a style="text-decoration: none" href="http://supmladong.kkp.go.id/"> Sekolah Usaha Perikanan Menengah (SUPM) Negri Ladong Aceh.</a></p>
+            </dd>
+
+            <dt class="col-sm-3">Perguruan Tinggi</dt>
+            <dd class="col-sm-9">
+              <p>Tahun 2018-sekarang.</p>
+              <p> <a style="text-decoration: none" href="https://politeknikaup.ac.id/">Politeknik Ahli Usaha Perikanan (Poltek AUP) Jakarta.</a></p>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    <!-- interest -->
+    <section class="section2">
+      <div class="container container-fluid text-center interest text-light bg-dark">
+        <h4 class="display-4 mb-5" id="interest">Interest</h4>
+        <div class="row pt-4">
+          <div class="col-md-4">
+            <span class="lingkaran bg-primary">
+              <i class="fa-solid fa-code fa-3x text-dark"></i>
+            </span>
+            <h3>Web Programing</h3>
+            <p> Saya tertarik di dunia programing website dan ini adalah project pertama saya.</p>
+          </div>
+
+          <div class="col-md-4">
+            <span class="lingkaran bg-warning">
+              <i class="fa-solid fa-computer fa-3x text-dark"></i>
+            </span>
+            <h3>Komputer</h3>
+            <p>Saya memiliki antusias yang tinggi terhadap teknologi khususnya komputer. </p>
+          </div>
+
+          <div class="col-md-4">
+            <span class="lingkaran bg-secondary">
+              <i class="fa-solid fa-language fa-3x text-dark"></i>
+            </span>
+            <h3>Belajar Bahasa</h3>
+            <p>Saya dapat berbicara dalam beberapa bahasa yaitu Jawa, Minang, sedikit Aceh dan inggris. </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container container-fluid text-center quotes text-light bg-dark mt-5 mb-5">
+        <div class="row pt-4 align-content-center">
+          <div class="col text-center">
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, obcaecati porro optio expedita inventore, laboriosam dignissimos perspiciatis deserunt voluptatum provident vel unde eum, repellat accusamus."</p>
+          </div>
         </div>
       </div>
     </section>
-    <footer>
-      <div class="footer_text">
-        <p>this is footer</p>
+    <!-- quote -->
+  <!-- footer -->
+    <footer> 
+    <div class="container copyright">
+      <div class="row">
+         <div class="col text-center text-light pt-4">
+            <h5>Menu</h5>
+            <p>
+              <a href="">About me</a></li>
+              <a href="">Education</a></li>
+              <a href="">Interest</a></li>
+            </p>
+          </div>
       </div>
+       <div class="row text-center pt-4">
+        <p>
+          <a href="" class="lang"><i class="fa-brands fa-html5"></i></a>
+          <a href="" class="lang"><i class="fa-brands fa-css3-alt"></i></a>
+          <a href="" class="lang"><i class="fa-brands fa-js"></i></a>
+          <a href="" class="lang"><i class="fa-brands fa-bootstrap"></i></a>
+        </p>
+        <p class="text-secondary"><i class="fa-regular fa-copyright"></i> 2022, Sinatria Pindho Barokah</p>
+      </div>
+    </div>
     </footer>
+    <!-- bootsrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/7ac0490ca0.js" crossorigin="anonymous"></script>
   </body>
 </html>
