@@ -4,21 +4,21 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 * {
   font-family: "Montserrat", sans-serif;
 }
-
+/*nav  *
 /* banner */
-.navbar a {
-  color: #fff;
-}
+
 .banner {
   background: url("image/lubo-minar-jUiNBSfWZPw-unsplash.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 20%;
   padding-bottom: 20%;
+  margin-top: -75px;
 }
 .profile {
   display: flex;
@@ -29,6 +29,7 @@ body {
   height: 150px;
   border-radius: 50%;
   box-shadow: 50px black;
+  border: 5px solid rgb(82, 79, 79);
 }
 /* about */
 
@@ -100,11 +101,23 @@ footer {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .banner {
+    margin-top: 0;
+  }
+  .navbar {
+    background-color: black;
+  }
 }
 /* tablet */
 @media (max-width: 1024px) and (min-width: 600px) {
   .edu {
     text-align: left;
+  }
+  .banner {
+    margin-top: 0;
+  }
+  .navbar {
+    background-color: black;
   }
 }
 /* desktop */

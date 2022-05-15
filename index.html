@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheet.css" />
-    <title>Personal blog - Sinatria</title>
+    <title>Personal bio - Sinatria</title>
     <link rel="shortcut icon" type="image/x-icon" href="image/man.png" />
     <!-- bootstap -->
     <!-- Bootstrap CSS -->
@@ -17,48 +17,63 @@
   </head>
   <body class="bg-dark">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark sticky-top text-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">My bio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark p-md-3">
+      <div class="container">
+        <a href="" class="navbar-brand"><h5 class="text-primary">My Personal Bio</h5></a>
+        <button 
+          type="button"
+          class="navbar-toggler"
+          data-bs-target="#navbarNav"
+          data-bs-toggle="collapse"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle Navbar"
+         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse text-right" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="#">About</a>
-            <a class="nav-link" href="#">Education</a>
-            <a class="nav-link" href="#">Interest</a>
-          </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item m-2">
+              <a href="#about" class="navlink text-decoration-none"><h6>About</h6></a>
+            </li>
+            <li class="nav-item m-2">
+              <a href="#edu" class="navlink text-decoration-none"><h6>Education</h6></a>
+            </li>
+            <li class="nav-item m-2">
+              <a href="#interest" class="navlink text-decoration-none"><h6>interest</h6></a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
+
     <!-- banner -->
     <div class="container-fluid banner">
       <div class="container text-center">
-        <h3 class="display-1 text-light">halo!</h3>
-        <h4 class="display-6 text-light">Saya Sinatria Pindho Barokah, selamat datang di website bio saya</h4>
-        <a href="#about">
-          <button type="button" class="btn btn-warning btn-lg">Tentang Saya</button>
-        </a>
+         <h3 class="display-1 text-light">hello!!</h3>
+         <h4 class="display-6 text-secondary">I'm Sinatria Pindho Barokah</h4>
+         <h5 class="text-warning tex">Welcome to my personal bio!!</h5>
       </div>
     </div>
     <!-- about -->
-    <section class="section1">
+    <section class="section1" id="about">
       <div class="container-fluid about pt-5 pb-5">
-        <h3 class="dispay-3 text-center text-light mb-4" id="About">About Me</h3>
+        <h3 class="dispay-3 text-center text-light mb-4">About Me</h3>
         <div class="profile pb-4">
           <img src="image/profile.jpg" alt="" />
         </div>
         <div class="container text-center text-light">
           <p>
             <a href="" class="social"><i class="fa-brands fa-facebook fa-2x"></i></a>
-            <a href="" class="social"><i class="fa-brands fa-instagram fa-2x"></i></a>
-            <a href="" class="social"><i class="fa-brands fa-github fa-2x"></i></a>
+            <a href="https://www.instagram.com/sinatria_pb/" class="social"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href="https://github.com/sinatriapb" class="social"><i class="fa-brands fa-github fa-2x"></i></a>
           </p>
 
           
-          <p>Saya dilahirkan oleh kedua orang tua yang berdarah jawa di Banyumas Jawa Tengah pada tahun 2000. Saya di besarkan di Solok Selatan, Sumatera Barat </p>
-          <h5 class="mt-4 mb-4 text-warning">Edukasi</h5>
+          <p>Saya dilahirkan di Banyumas Jawa Tengah oleh orang tua yang berdarah jawa pada tahun 2000 dan di besarkan di Solok Selatan, Sumatera Barat </p>
+          <h3 class="mt-4 mb-4 text-light mt-5" id="edu">Education</h3>
           <dl class="row edu">
             <dt class="col-sm-3"></i> Sekolah Dasar</dt>
             <dd class="col-sm-9">
@@ -87,32 +102,32 @@
         </div>
       </div>
     <!-- interest -->
-    <section class="section2">
+    <section class="section2" id="interest">
       <div class="container container-fluid text-center interest text-light bg-dark">
-        <h4 class="display-4 mb-5" id="interest">Interest</h4>
+        <h5 class="display-5 mb-5">Interest</h5>
         <div class="row pt-4">
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <span class="lingkaran bg-primary">
               <i class="fa-solid fa-code fa-3x text-dark"></i>
             </span>
-            <h3>Web Programing</h3>
+            <h4 class="text-primary">Web Programing</h4>
             <p> Saya tertarik di dunia programing website dan ini adalah project pertama saya.</p>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <span class="lingkaran bg-warning">
               <i class="fa-solid fa-computer fa-3x text-dark"></i>
             </span>
-            <h3>Komputer</h3>
+            <h4 class="text-warning">Komputer</h4>
             <p>Saya memiliki antusias yang tinggi terhadap teknologi khususnya komputer. </p>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mb-3">
             <span class="lingkaran bg-secondary">
               <i class="fa-solid fa-language fa-3x text-dark"></i>
             </span>
-            <h3>Belajar Bahasa</h3>
-            <p>Saya dapat berbicara dalam beberapa bahasa yaitu Jawa, Minang, sedikit Aceh dan inggris. </p>
+            <h4 class="text-secondary">Bahasa</h4>
+            <p>Saya dapat berbicara dalam bahasa Indonesia, Inggris, Jawa, Minang, dan sedikit Aceh. </p>
           </div>
         </div>
       </div>
@@ -132,19 +147,19 @@
       <div class="row">
          <div class="col text-center text-light pt-4">
             <h5>Menu</h5>
-            <p>
-              <a href="">About me</a></li>
-              <a href="">Education</a></li>
-              <a href="">Interest</a></li>
+            <p> 
+              <a href="#about" class="text-decoration-none">About | </a></li>
+              <a href="#edu" class="text-decoration-none">Education | </a></li>
+              <a href="#interest" class="text-decoration-none">Interest </a></li>
             </p>
           </div>
       </div>
        <div class="row text-center pt-4">
         <p>
-          <a href="" class="lang"><i class="fa-brands fa-html5"></i></a>
-          <a href="" class="lang"><i class="fa-brands fa-css3-alt"></i></a>
-          <a href="" class="lang"><i class="fa-brands fa-js"></i></a>
-          <a href="" class="lang"><i class="fa-brands fa-bootstrap"></i></a>
+          <a href="https://en.wikipedia.org/wiki/HTML" class="lang"><i class="fa-brands fa-html5"></i></a>
+          <a href="https://en.wikipedia.org/wiki/CSS" class="lang"><i class="fa-brands fa-css3-alt"></i></a>
+          <a href="https://en.wikipedia.org/wiki/JavaScript" class="lang"><i class="fa-brands fa-js"></i></a>
+          <a href="https://getbootstrap.com/" class="lang"><i class="fa-brands fa-bootstrap"></i></a>
         </p>
         <p class="text-secondary"><i class="fa-regular fa-copyright"></i> 2022, Sinatria Pindho Barokah</p>
       </div>
